@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import hrImg from "../images/hr-mv.png";
 import logoImg from "../images/logo-white-orange.png";
 import NotYetMemberBtn from "../components/utilities/NotYetMemberBtn";
+import LoginAlt from "../components/utilities/LoginAlt";
 
 // Icons
 // import { Icon } from "@iconify/react";
@@ -15,7 +16,7 @@ export default function Login() {
       <div className="grid grid-cols-1 md:grid-cols-2 m-auto h-[550px] shadow-lg shadow-gray-600 sm:max-w-[900px] rounded-l-[25px] rounded-r-[25px]">
         {/* LeftSide Container */}
 
-        <div className="w-full h-[550px] hidden md:block bg-regImg bg-no-repeat bg-cover rounded-l-[25px]">
+        <div className="w-full h-[550px] hidden md:block bg-loginImg bg-no-repeat bg-cover rounded-l-[25px]">
           <div className="flex flex-col h-full items-center justify-end pb-5">
             <div className="bg-primary w-3/4 h-20 rounded-xl overflow-hidden">
               <NotYetMemberBtn />
@@ -66,18 +67,7 @@ export default function Login() {
               </button>
             </div>
             {/* End of INPUTS */}
-            <div className="flex flex-row items-center mt-3 md:mt-8">
-              <h4 className="font-sans font-extralight text-white text-xl p-3">
-                or Login Using
-              </h4>
-              <button className="group overflow-hidden h-12 rounded-lg flex items-center  hover:text-secondary font-sans font-medium text-xl text-white indent-2">
-                <Icon
-                  className="text-4xl"
-                  icon="akar-icons:google-contained-fill"
-                />
-                Google Account
-              </button>
-            </div>
+            <LoginAlt />
             {/* Not Yet Member? */}
             <div className="md:hidden flex flex-col items-center pt-3">
               <img className="mb-2" src={hrImg} alt="" />

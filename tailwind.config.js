@@ -8,7 +8,8 @@ module.exports = {
         secondary: "#f58820",
       },
       backgroundImage: {
-        regImg: "url('/src/images/team1.png')",
+        loginImg: "url('/src/images/team1.png')",
+        regImg: "url('/src/images/bg-image-reg.png')",
       },
     },
   },
