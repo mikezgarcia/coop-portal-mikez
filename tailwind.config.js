@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         primary: "#1f3f77",
         secondary: "#f58820",
+        subOne: "#e8d5cc",
+        subTwo: "#f2eee3",
       },
       backgroundImage: {
         loginImg: "url('/src/images/team1.png')",

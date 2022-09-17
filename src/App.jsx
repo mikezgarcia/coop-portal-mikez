@@ -10,6 +10,13 @@ import SidePanel from "./pages/dashboard/SidePanel";
 import MainStats from "./pages/dashboard/MainStats";
 import DashboardNav from "./pages/dashboard/DashboardNav";
 import MainDashboard from "./pages/dashboard/MainDashboard";
+import NavBar from "./components/NavBar";
+import Hero from "./components/sections/Hero";
+import HeroIcons from "./components/sections/HeroIcons";
+import AboutUs from "./components/sections/AboutUs";
+import Services from "./components/sections/Services";
+import Testimonials from "./components/sections/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +32,13 @@ function App() {
         <Route path="/mainstat" element={<MainStats />} />
         <Route path="/dashboardnav" element={<DashboardNav />} />
         <Route path="/maindashboard" element={<MainDashboard />} />
+        <Route path="/navbar" element={<NavBar />} />
+        <Route path="/hero" element={<Hero />} />
+        <Route path="/heroicons" element={<HeroIcons />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/footer" element={<Footer />} />
       </Routes>
     </BrowserRouter>
   );
